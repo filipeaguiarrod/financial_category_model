@@ -17,8 +17,6 @@ pip install -r requirements.txt
 ## Como Executar
 
 
-```
-
 2. A aplicação FastAPI estará disponível e você pode enviar requisições POST para o endpoint `/greet/` com o seguinte formato:
 
 ```json
