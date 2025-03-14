@@ -5,11 +5,11 @@ FROM python:3.10
 WORKDIR /app
 
 # Copy the dependencies file and install them
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt /app/
+COPY main.py /app/
+COPY model /app/model/
 
-# Copy the application files
-COPY . .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the FastAPI default port
 EXPOSE 5757
