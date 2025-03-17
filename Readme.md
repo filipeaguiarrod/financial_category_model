@@ -2,6 +2,19 @@
 
 Este projeto é uma aplicação de classificação de categorias financeiras usando FastAPI. Ele utiliza um modelo de classificação logística treinado e um CountVectorizer para transformar os dados de entrada.
 
+## Modelo e Resultados
+
+
+| Métrica | Precisão | Revocação | F1-Score |  
+|---------------|--------|--------| --------| 
+| Macro Average   | 0.69 | 0.69 | 0.67 |  
+| Weighted Average | 0.79 | 0.77 | 0.77 |
+
+**Accuracy**: 0.77 
+
+
+![alt text](figures/cm.png)
+
 ## Estrutura do Projeto
 
 - `financial_category_model/main.py`: Contém a aplicação FastAPI que recebe entradas de lançamentos financeiros e retorna suas classificações.
