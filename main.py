@@ -6,7 +6,7 @@ app = FastAPI()
 
 # Load the count vectorizer and the nn classifier
 loaded_cv_path = os.path.join('model/', 'count_vectorizer.pkl')
-loaded_model_path = os.path.join('model/', 'logistic_classifier.pkl')
+loaded_model_path = os.path.join('model/', 'nn_classifier.pkl')
 
 loaded_cv = joblib.load(loaded_cv_path)
 loaded_model = joblib.load(loaded_model_path)
