@@ -4,7 +4,7 @@ import os
 import joblib
 app = FastAPI()
 
-# Load the count vectorizer and the nn classifier
+# Load the count vectorizer and the classifier model.
 loaded_cv_path = os.path.join('model/', 'count_vectorizer.pkl')
 loaded_model_path = os.path.join('model/', 'nn_classifier.pkl')
 
@@ -24,4 +24,4 @@ def greet_user(user: UserInput):
     for lancamento in user.lancamentos:
         predict = loaded_model.predict(loaded_cv.transform([lancamento]))
         predictions.append(predict[0])
-    return {'classifications': predictions}
+    return {'classifications': predictions, 'model':'nn_classifier'}
