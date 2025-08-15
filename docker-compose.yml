@@ -1,11 +1,10 @@
 services:
-  
-financial_category_model:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: financial_category_model
-    container_name: financial_category_model
-    ports:
-      - "5757:5757"
-    restart: unless-stopped
+  financial_category_model:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: financial_category_model
+    container_name: financial_category_model
+    ports:
+      - "5757:5757"
+    restart: unless-stopped
